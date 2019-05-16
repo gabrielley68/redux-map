@@ -1,14 +1,18 @@
 import React from 'react';
 import {Switch,Route} from "react-router-dom";
-import Custom from "./views/custom";
-import Preview from "./views/preview";
+import Map from "./views/map";
+import Sidebar from "./views/sidebar";
 
 function App() {
   return (
     <div className="App">
         <Switch>
-            <Route exact path="/custom" component={Custom}/>
-            <Route exact path="/" component={Preview}/>
+            <Route exact path="/" render={props =>
+                <div>
+                    <Map/>
+                    <Sidebar/>
+                </div>
+            }/>
         </Switch>
     </div>
   );

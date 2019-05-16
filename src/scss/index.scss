@@ -1,7 +1,8 @@
 @import './variables.scss';
 @import './App.scss';
-@import '../views/custom/index';
-@import '../views/preview/index';
+@import '../views/map/index';
+@import '../views/sidebar/index';
+@import '../views/popin/index';
 body {
   margin: 0;
 }
